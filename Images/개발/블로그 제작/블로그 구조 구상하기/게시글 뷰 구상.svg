@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="400" height="1080" fill="#2C3E50"/>
+  
+  <!-- Profile Image Placeholder -->
+  <circle cx="200" cy="100" r="60" fill="#BDC3C7"/>
+  
+  <!-- Shortcut Button Container -->
+  <rect x="50" y="200" width="300" height="50" rx="25" fill="#34495E"/>
+  <text x="200" y="235" font-size="24" fill="#ECF0F1" text-anchor="middle">
+    Home | GitHub | LinkedIn
+  </text>
+  
+  <!-- Separator Line -->
+  <line x1="50" y1="280" x2="350" y2="280" stroke="#ECF0F1" stroke-width="2"/>
+  
+  <!-- Categories -->
+  <text x="50" y="330" font-size="24" fill="#ECF0F1">전체</text>
+  <text x="50" y="370" font-size="24" fill="#ECF0F1">카테고리 A</text>
+  <text x="50" y="410" font-size="24" fill="#ECF0F1">카테고리 B</text>
+  <text x="70" y="450" font-size="20" fill="#ECF0F1">- 카테고리 B.1</text>
+  <text x="70" y="480" font-size="20" fill="#ECF0F1">- 카테고리 B.2</text>
+  <text x="90" y="510" font-size="18" fill="#ECF0F1">-- 카테고리 B.2.1</text>
+  <text x="90" y="540" font-size="18" fill="#ECF0F1">-- 카테고리 B.2.2</text>
+  <text x="50" y="580" font-size="24" fill="#ECF0F1">카테고리 C</text>
+  
+  <!-- Main Content Area -->
+  <g transform="translate(400, 0)">
+    <rect width="1520" height="1500" fill="#ECF0F1"/>
+    <rect width="1520" height="400" stroke="#2C3E50" stroke-width="2" fill="#FFFFFF"/>
+    <text x="760" y="200" font-size="48" text-anchor="middle">
+      게시글 썸네일 및 제목
+    </text>
+    
+    <!-- Post Tags -->
+    <!-- Tag 1 -->
+    <rect x="600" y="260" width="100" height="30" rx="15" fill="#3498DB"/>
+    <text x="650" y="275" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">태그1</text>
+    <!-- Tag 2 -->
+    <rect x="710" y="260" width="100" height="30" rx="15" fill="#3498DB"/>
+    <text x="760" y="275" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">태그2</text>
+    <!-- Tag 3 -->
+    <rect x="820" y="260" width="100" height="30" rx="15" fill="#3498DB"/>
+    <text x="870" y="275" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">태그3</text>
+    
+    <!-- Table of Contents -->
+    <rect x="460" y="450" width="600" height="300" fill="none" stroke="#2C3E50" stroke-width="2" rx="10"/>
+    <!-- Horizontal lines to separate rows -->
+    <line x1="460" y1="500" x2="1060" y2="500" stroke="#2C3E50" stroke-width="1"/>
+    <line x1="460" y1="550" x2="1060" y2="550" stroke="#2C3E50" stroke-width="1"/>
+    <line x1="460" y1="600" x2="1060" y2="600" stroke="#2C3E50" stroke-width="1"/>
+    <line x1="460" y1="650" x2="1060" y2="650" stroke="#2C3E50" stroke-width="1"/>
+    <line x1="460" y1="700" x2="1060" y2="700" stroke="#2C3E50" stroke-width="1"/>
+    
+    <!-- Table cells text -->
+    <text x="760" y="475" font-size="32" fill="#2C3E50" text-anchor="middle" dominant-baseline="middle">목차</text>
+    <text x="470" y="525" font-size="24" fill="#2C3E50" text-anchor="start" dominant-baseline="middle">1. 주제</text>
+    <text x="470" y="575" font-size="24" fill="#2C3E50" text-anchor="start" dominant-baseline="middle">2. 주제 2</text>
+    <text x="490" y="625" font-size="24" fill="#2C3E50" text-anchor="start" dominant-baseline="middle">2.1 세부사항 A</text>
+    <text x="490" y="675" font-size="24" fill="#2C3E50" text-anchor="start" dominant-baseline="middle">2.2 세부사항 B</text>
+    <text x="470" y="725" font-size="24" fill="#2C3E50" text-anchor="start" dominant-baseline="middle">3. 결론</text>
+    
+    <!-- Body Content Section -->
+    <text x="760" y="900" font-size="24" fill="#2C3E50" text-anchor="middle">
+      본문 내용
+    </text>
+  </g>
+
+  <!-- Triangle -->
+  <polygon points="1160,1040 1150,1060 1170,1060" fill="#2C3E50"/>
+</svg>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="400" height="1080" fill="#2C3E50"/>
+  
+  <!-- Profile Image Placeholder -->
+  <circle cx="200" cy="100" r="60" fill="#BDC3C7"/>
+  
+  <!-- Shortcut Button Container -->
+  <rect x="50" y="200" width="300" height="50" rx="25" fill="#34495E"/>
+  <text x="200" y="235" font-size="24" fill="#ECF0F1" text-anchor="middle">Home | GitHub | LinkedIn</text>
+  
+  <!-- Separator Line -->
+  <line x1="50" y1="280" x2="350" y2="280" stroke="#ECF0F1" stroke-width="2"/>
+  
+  <!-- Categories -->
+  <text x="50" y="330" font-size="24" fill="#ECF0F1">전체</text>
+  <text x="50" y="370" font-size="24" fill="#ECF0F1">카테고리 A</text>
+  <text x="50" y="410" font-size="24" fill="#ECF0F1">카테고리 B</text>
+  <text x="70" y="450" font-size="20" fill="#ECF0F1">- 카테고리 B.1</text>
+  <text x="70" y="480" font-size="20" fill="#ECF0F1">- 카테고리 B.2</text>
+  <text x="90" y="510" font-size="18" fill="#ECF0F1">-- 카테고리 B.2.1</text>
+  <text x="90" y="540" font-size="18" fill="#ECF0F1">-- 카테고리 B.2.2</text>
+  <text x="50" y="580" font-size="24" fill="#ECF0F1">카테고리 C</text>
+  
+  <!-- Main Content Area -->
+  <g transform="translate(400, 0)">
+    <rect width="1520" height="1000" fill="#ECF0F1"/>
+    
+    <!-- Post Cards -->
+    <g fill="#FFFFFF" stroke="#2C3E50" stroke-width="2" transform="translate(40, 40)">
+      <rect width="440" height="360" rx="20"/>
+      <text x="220" y="160" font-size="64" fill="#2C3E50" text-anchor="middle">썸네일</text>
+      <line x1="0" y1="240" x2="440" y2="240"/>
+      <text x="220" y="320" font-size="64" fill="#2C3E50" text-anchor="middle">게시글 제목</text>
+      <rect x="500" width="440" height="360" rx="20"/>
+      <rect x="1000" width="440" height="360" rx="20"/>
+      <g transform="translate(0,450)">
+        <rect width="440" height="360" rx="20"/>
+        <rect x="500" width="440" height="360" rx="20"/>
+        <rect x="1000" width="440" height="360" rx="20"/>
+      </g>
+    </g>
+  
+    <!-- Pagination -->
+    <g fill="#2C3E50" font-size="24" text-anchor="middle" transform="translate(400, 960)">
+      <text x="250" fill="#FF0000">1</text>
+      <text x="300">2</text>
+      <text x="350">3</text>
+      <text x="400">4</text>
+      <text x="450">5</text>
+    </g>
+    
+    <!-- Footer -->
+    <rect y="1000" width="1520" height="80" fill="#34495E"/>
+    <text x="760" y="1050" font-size="24" fill="#ECF0F1" text-anchor="middle">© 2025 YUBIZ 각종 권리 명시</text>
+  </g>
+</svg>
