@@ -1,0 +1,53 @@
+name: Generate Docs list and tree
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: release
+          submodules: recursive
+
+      - name: Setup Git config
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Reset to main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Install script tool
+        run: dotnet tool install -g dotnet-script
+
+      - name: Run script
+        run: |
+          dotnet script Scripts/Main.csx generate-file-list Docs DocsList.json --exclude-patterns 템플릿.md
+          dotnet script Scripts/Main.csx generate-file-tree Docs DocsTree.json --exclude-patterns 템플릿.md
+
+      - name: Commit Docs list and tree
+        run: |
+          git add DocsList.json DocsTree.json
+          git commit -m "게시글 목록 및 트리 업데이트"
+
+      - name: Force push
+        run: git push -f
