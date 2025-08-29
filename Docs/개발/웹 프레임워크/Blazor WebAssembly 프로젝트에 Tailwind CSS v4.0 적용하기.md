@@ -1,4 +1,5 @@
 ---
+Title: Blazor WebAssembly 프로젝트에 Tailwind CSS v4.0 적용하기
 Tags: [.NET, Blazor, Blazor WebAssembly, Tailwind CSS, Tailwind, CSS, Gulp]
 ---
 
@@ -164,18 +165,14 @@ npm install --save-dev gulp
 const { spawn } = require("child_process");
 
 exports.watch = function (cb) {
-    const process = spawn(
-        "dotnet",
-        ["build", "-t:Watch", "-p:SkipBuild=true"],
-        {
-            detached: true,
-            stdio: "ignore",
-        }
-    );
+  const process = spawn("dotnet", ["build", "-t:Watch", "-p:SkipBuild=true"], {
+    detached: true,
+    stdio: "ignore",
+  });
 
-    process.unref();
+  process.unref();
 
-    cb();
+  cb();
 };
 ```
 
@@ -198,5 +195,5 @@ Tailwind CSS v4.0이 나온지 얼마 안됐다보니 관련 자료 찾기가 �
 
 # 참고
 
--   [Tailwind CLI 설치 문서](https://tailwindcss.com/docs/installation/tailwind-cli)
--   [Gulp 문서](https://gulpjs.com/docs/en/getting-started/quick-start)
+- [Tailwind CLI 설치 문서](https://tailwindcss.com/docs/installation/tailwind-cli)
+- [Gulp 문서](https://gulpjs.com/docs/en/getting-started/quick-start)
