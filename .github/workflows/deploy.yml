@@ -1,4 +1,4 @@
-name: Generate Docs list and tree
+name: Generate Data
 
 on:
   push:
@@ -42,8 +42,8 @@ jobs:
 
       - name: Run script
         run: |
-          dotnet script Scripts/Main.csx generate-file-list Docs DocsList.json --exclude-patterns Docs/템플릿.md
-          dotnet script Scripts/Main.csx generate-file-tree Docs DocsTree.json --exclude-patterns Docs/템플릿.md
+          dotnet script Scripts/Main.csx generate-file-path-with-commit-history Docs DocumentFilePathWithCommitHistory.json --exclude-patterns Docs/템플릿.md
+          dotnet script Scripts/Main.csx generate-file-tree Docs DocumentFileTree.json --exclude-patterns Docs/템플릿.md
 
       - name: Commit Docs list and tree
         run: |
