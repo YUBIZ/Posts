@@ -45,10 +45,10 @@ jobs:
           dotnet script Scripts/Main.csx generate-file-path-with-commit-history-collection Docs DocumentFilePathWithCommitHistoryCollection.json --exclude-patterns Docs/템플릿.md
           dotnet script Scripts/Main.csx generate-file-tree Docs DocumentFileTree.json --exclude-patterns Docs/템플릿.md
 
-      - name: Commit Docs list and tree
+      - name: Commit Data
         run: |
-          git add DocsList.json DocsTree.json
-          git commit -m "게시글 목록 및 트리 업데이트"
+          git add DocumentFilePathWithCommitHistoryCollection.json DocumentFileTree.json
+          git commit -m "데이터 업데이트"
 
       - name: Force push
         run: git push -f
