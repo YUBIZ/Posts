@@ -1,7 +1,7 @@
 ---
 Title: " C# 참조, 값 타입과 매개변수"
 ThumbnailUri:
-tags:
+Tags:
   - CSharp
 ---
 
