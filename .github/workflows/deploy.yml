@@ -45,7 +45,7 @@ jobs:
         run: |
           dotnet script Scripts/Main.csx generate-file-path-and-commit-history-collection Docs DocumentFilePathAndCommitHistoryCollection.json --exclude-patterns Docs/템플릿.md
           dotnet script Scripts/Main.csx generate-file-tree Docs DocumentFileTree.json --exclude-patterns Docs/템플릿.md
-          dotnet script Scripts/Main.csx generate-site-map Docs DocumentSiteMap.xml https://yubiz.github.io --exclude-patterns Docs/템플릿.md
+          dotnet script Scripts/Main.csx generate-site-map Docs DocumentSiteMap.xml https://yubiz.github.io/PostView/Document?document-uri= --exclude-patterns Docs/템플릿.md
 
       - name: Commit Data
         run: |
